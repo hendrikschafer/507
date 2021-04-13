@@ -31,8 +31,8 @@ export default function Home() {
 
         <p className="mt-3 text-2xl">
           {''} 
-          <code className="p-3 font-mono text-lg bg-gray-100 rounded-md shadow-md">
-            ⬇ Choose your Court for {txtDate} below ⬇
+          <code className="p-3 font-mono text-lg bg-gray-100 rounded-md shadow-md m-2">
+            ⬇ Choose your Court for {txtDate} ⬇
           </code>
         </p>
 
