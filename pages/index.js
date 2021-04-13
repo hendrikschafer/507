@@ -2,6 +2,7 @@ import Head from 'next/head'
 
 export default function Home() {
   const date = getDate();
+  const txtDate = getTxtDate();
   var hp3 = "https://www.openplay.co.uk/booking/place/4038?date="+date+"&use_id=42"
   var rp3 = "https://www.openplay.co.uk/booking/place/154?date="+date+"&use_id=42"
 
@@ -31,7 +32,7 @@ export default function Home() {
         <p className="mt-3 text-2xl">
           {''} 
           <code className="p-3 font-mono text-lg bg-gray-100 rounded-md shadow-md">
-            ⬇ Choose your Court below ⬇
+            ⬇ Choose your Court for {txtDate} below ⬇
           </code>
         </p>
 
@@ -64,16 +65,38 @@ function getDate() {
 
   var mm = t3.getMonth()+1; 
   var yyyy = t3.getFullYear();
+
   if(dd<10) {
       dd='0'+dd;
-  } 
+  }
 
   if(mm<10) {
       mm='0'+mm;
   } 
- 
+
   t3 = yyyy+'-'+mm+'-'+dd;
   return t3
+}
+
+function getTxtDate() {
+  var t3 = new Date();
+  t3 = t3.addDays(3)
+  var weekdays = new Array(7);
+  weekdays[0] = "Sunday";
+  weekdays[1] = "Monday";
+  weekdays[2] = "Tuesday";
+  weekdays[3] = "Wednesday";
+  weekdays[4] = "Thursday";
+  weekdays[5] = "Friday";
+  weekdays[6] = "Saturday";
+  t3 = weekdays[t3.getDay()]
+  return t3
+}
+
+Date.prototype.addDays = function(days) {
+    var date = new Date(this.valueOf());
+    date.setDate(date.getDate() + days);
+    return date;
 }
 
 
