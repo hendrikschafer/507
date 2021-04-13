@@ -7,7 +7,7 @@ export default function Home() {
 
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div className="flex flex-col items-center justify-center min-h-screen m-2">
       <Head>
         <title>🎾🎾🎾</title>
         <link rel="icon" href="/favicon.ico" />
@@ -35,7 +35,7 @@ export default function Home() {
           </code>
         </p>
 
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
+        <div className="flex flex-wrap items-center justify-around max-w-4xl m-2 sm:w-full">
           <a
             href={hp3}
             className="p-6 mt-6 text-left border w-96 rounded-xl shadow-md hover:shadow-2xl hover:text-blue-600 focus:text-blue-600"
