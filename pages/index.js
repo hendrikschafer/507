@@ -13,7 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex flex-col items-center justify-center flex-1 px-20 text-center">
+      <main className="flex flex-col items-center justify-center flex-1 text-center">
         <h1 className="text-8xl font-bold">
           <a className="text-3xl">welco</a>
           <a className="text-4xl">m</a>
@@ -30,7 +30,7 @@ export default function Home() {
 
         <p className="mt-3 text-2xl">
           {''} 
-          <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
+          <code className="p-3 font-mono text-lg bg-gray-100 rounded-md shadow-md">
             ⬇ Choose your Court below ⬇
           </code>
         </p>
@@ -38,14 +38,14 @@ export default function Home() {
         <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
           <a
             href={hp3}
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
+            className="p-6 mt-6 text-left border w-96 rounded-xl shadow-md hover:shadow-2xl hover:text-blue-600 focus:text-blue-600"
           >
             <h3 className="text-2xl font-bold">Hyde Park &rarr; 🚀</h3>
           </a>
 
           <a
             href={rp3}
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
+            className="p-6 mt-6 text-left border w-96 rounded-xl shadow-md hover:shadow-2xl hover:text-blue-600 focus:text-blue-600"
           >
             <h3 className="text-2xl font-bold">Regents Park &rarr; 🪐</h3>
           </a>
