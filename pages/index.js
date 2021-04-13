@@ -14,17 +14,24 @@ export default function Home() {
       </Head>
 
       <main className="flex flex-col items-center justify-center flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          welcome to hAcK ThE TeNnIs bRo dot com{' '}
-          <a className="text-blue-600" href="https://en.wikipedia.org/wiki/Thomas_Hollis_(1720–1774)">
-            get adobe flash player!
-          </a>
+        <h1 className="text-8xl font-bold">
+          <a className="text-3xl">welco</a>
+          <a className="text-4xl">m</a>
+          <a className="text-5xl">e </a>
+          <a className="text-6xl">t</a>
+          <a className="text-7xl">o </a>
+          <a className="text-blue-600">hAcK ThE TeNnIs bRo</a>
+          <a className="text-7xl"> d</a>
+          <a className="text-6xl">o</a>
+          <a className="text-5xl">t </a>
+          <a className="text-4xl">c</a>
+          <a className="text-3xl">om</a>
         </h1>
 
         <p className="mt-3 text-2xl">
-          {' '}
+          {''} 
           <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
-            Get started by choosing your Court 🚀
+            ⬇ Choose your Court below ⬇
           </code>
         </p>
 
@@ -33,29 +40,19 @@ export default function Home() {
             href={hp3}
             className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
           >
-            <h3 className="text-2xl font-bold">Hyde Park &rarr;</h3>
+            <h3 className="text-2xl font-bold">Hyde Park &rarr; 🚀</h3>
           </a>
 
           <a
             href={rp3}
             className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
           >
-            <h3 className="text-2xl font-bold">Regents Park &rarr;</h3>
+            <h3 className="text-2xl font-bold">Regents Park &rarr; 🪐</h3>
           </a>
         </div>
       </main>
 
-      <footer className="flex items-center justify-center w-full h-12 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://www.narth.co.uk"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/narthblack.svg" alt="Narth Logo" className="h-5 ml-2" />
-        </a>
-      </footer>
+      
     </div>
   )
 }
@@ -78,3 +75,21 @@ function getDate() {
   t3 = yyyy+'-'+mm+'-'+dd;
   return t3
 }
+
+
+
+/*
+
+<footer className="flex items-center justify-center w-full h-12 border-t">
+        <a
+          className="flex items-center justify-center"
+          href="https://www.narth.co.uk"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Powered by{' '}
+          <img src="/narthblack.svg" alt="Narth Logo" className="h-5 ml-2" />
+        </a>
+      </footer>
+
+*/
