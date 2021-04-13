@@ -4,19 +4,18 @@ export default function Home() {
   const date = getDate();
   var hp3 = "https://www.openplay.co.uk/booking/place/4038?date="+date+"&use_id=42"
   var rp3 = "https://www.openplay.co.uk/booking/place/154?date="+date+"&use_id=42"
-  console.log(hp3)
 
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
       <Head>
-        <title>hAcK ThE TeNnIs bRo</title>
+        <title>🎾🎾🎾</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className="flex flex-col items-center justify-center flex-1 px-20 text-center">
         <h1 className="text-6xl font-bold">
-          Welcome to hack the bros dot com{' '}
+          welcome to hAcK ThE TeNnIs bRo dot com{' '}
           <a className="text-blue-600" href="https://en.wikipedia.org/wiki/Thomas_Hollis_(1720–1774)">
             get adobe flash player!
           </a>
@@ -25,7 +24,7 @@ export default function Home() {
         <p className="mt-3 text-2xl">
           {' '}
           <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
-            Get started by choosing your Court
+            Get started by choosing your Court 🚀
           </code>
         </p>
 
@@ -46,10 +45,10 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className="flex items-center justify-center w-full h-24 border-t">
+      <footer className="flex items-center justify-center w-full h-12 border-t">
         <a
           className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="https://www.narth.co.uk"
           target="_blank"
           rel="noopener noreferrer"
         >
