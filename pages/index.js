@@ -13,7 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex flex-col items-center justify-center flex-1 text-center">
+      <main className="flex flex-col items-center justify-center flex-1 m-2 text-center">
         <h1 className="text-8xl font-bold">
           <a className="text-3xl">welco</a>
           <a className="text-4xl">m</a>
