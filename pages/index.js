@@ -38,14 +38,14 @@ export default function Home() {
         <div className="flex flex-wrap items-center justify-around max-w-4xl m-2 md:w-full">
           <a
             href={hp3}
-            className="p-6 mt-6 text-left border w-96 rounded-xl shadow-md hover:shadow-2xl hover:text-blue-600 focus:text-blue-600"
+            className="p-6 mt-6 m-2 text-left border w-96 rounded-xl shadow-md hover:shadow-2xl hover:text-blue-600 focus:text-blue-600"
           >
             <h3 className="text-2xl font-bold">Hyde Park &rarr; 🚀</h3>
           </a>
 
           <a
             href={rp3}
-            className="p-6 mt-6 text-left border w-96 rounded-xl shadow-md hover:shadow-2xl hover:text-blue-600 focus:text-blue-600"
+            className="p-6 mt-6 m-2 text-left border w-96 rounded-xl shadow-md hover:shadow-2xl hover:text-blue-600 focus:text-blue-600"
           >
             <h3 className="text-2xl font-bold">Regents Park &rarr; 🪐</h3>
           </a>
