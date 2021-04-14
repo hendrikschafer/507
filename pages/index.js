@@ -38,7 +38,7 @@ export default function Home() {
             <div className="rounded-xl mt-4 ring-black">
               <p className="mb-2 text-2xl">
                 {''} 
-                <code className="p-3 font-mono text-lg bg-gray-100 dark:bg-gray-100 rounded-md">
+                <code className="p-3 font-mono text-lg bg-gray-100 dark:bg-gray-900">
                   ⬇ Choose {date}'s Court ⬇
                 </code>
               </p>
@@ -48,7 +48,7 @@ export default function Home() {
                 {courts.map(({ name, url}) => (
                   <a
                   href={url}
-                  className="p-5 m-2 text-left border rounded-xl shadow-md hover:shadow-2xl hover:ring-2 hover:ring-blue-600"
+                  className="bg-gray-300 dark:bg-gray-600 p-5 m-2 text-left ring-black dark:ring-white hover:ring-blue-600 rounded-xl shadow-md hover:shadow-2xl ring-1 hover:ring-2"
                   >
                     <h3 className="text-2xl font-bold">{name}</h3>
                   </a>
