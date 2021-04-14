@@ -39,7 +39,7 @@ export default function Home() {
               <p className="mt-3 text-2xl">
                 {''} 
                 <code className="p-3 font-mono text-lg bg-gray-100 rounded-md shadow-md m-2">
-                  ⬇ Choose your Court for {date} ⬇
+                  ⬇ Choose {date}'s Court ⬇
                 </code>
               </p>
 
@@ -103,7 +103,7 @@ Date.prototype.addDays = function(days) {
 
 function getCourts(i) {
   var date = getDate(i)
-  return [{name: "Hyde Park", url: "https://www.openplay.co.uk/booking/place/4038?date="+date+"&use_id=42"}, {name: "Regents Park", url: "https://www.openplay.co.uk/booking/place/154?date="+date+"&use_id=42"}]
+  return [{name: "🔥Hyde Park🔥", url: "https://www.openplay.co.uk/booking/place/4038?date="+date+"&use_id=42"}, {name: "🚀Regents Park🚀", url: "https://www.openplay.co.uk/booking/place/154?date="+date+"&use_id=42"}]
 }
 
 function getWave(txt) {
