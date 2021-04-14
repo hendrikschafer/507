@@ -36,7 +36,7 @@ export default function Home() {
 
           {data.map(({ date, courts}) => (
             <div className="rounded-xl m-2 ring-black">
-              <p className="m-2 mt-4 text-2xl">
+              <p className="m-2 text-2xl">
                 {''} 
                 <code className="p-3 font-mono border text-lg bg-gray-100 rounded-md shadow m-2">
                   ⬇ Choose {date}'s Court ⬇
@@ -58,6 +58,16 @@ export default function Home() {
           ))}
         </div>
       </main>
+      <footer className="flex items-center justify-center w-full h-12 border">
+        <a
+          className="flex items-center justify-center"
+          href="https://www.narth.co.uk"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Powered by 🪐
+        </a>
+      </footer>
     </div>
   )
 }
@@ -114,7 +124,7 @@ function getWave(txt) {
 
 /*
 
-<footer className="flex items-center justify-center w-full h-12 border-t">
+      <footer className="flex items-center justify-center w-full h-12 border-t">
         <a
           className="flex items-center justify-center"
           href="https://www.narth.co.uk"
