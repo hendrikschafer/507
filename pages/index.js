@@ -14,31 +14,31 @@ export default function Home() {
       </Head>
 
       <main className="flex flex-col items-center justify-center flex-1 m-2 text-center">
-        <h1 className="text-8xl font-bold">
+        <h1 className="text-5xl lg:text-8xl font-bold">
           <a className="text-xl">wel</a>
-          <a className="text-2xl">c</a>
-          <a className="text-3xl">o</a>
-          <a className="text-4xl">m</a>
-          <a className="text-5xl">e </a>
-          <a className="text-6xl">t</a>
-          <a className="text-7xl">o </a>
+          <a className="text-xl lg:text-2xl">c</a>
+          <a className="text-xl lg:text-3xl">o</a>
+          <a className="text-xl lg:text-4xl">m</a>
+          <a className="text-2xl lg:text-5xl">e </a>
+          <a className="text-3xl lg:text-6xl">t</a>
+          <a className="text-4xl lg:text-7xl">o </a>
           <a className="text-blue-600">hAcK ThE TeNnIs bRo</a>
-          <a className="text-7xl"> d</a>
-          <a className="text-6xl">o</a>
-          <a className="text-5xl">t</a>
-          <a className="text-4xl"> </a>
-          <a className="text-3xl">c</a>
-          <a className="text-2xl">o</a>
-          <a className="text-xl">m</a>
+          <a className="text-4xl  lg:text-7xl"> d</a>
+          <a className="text-3xl  lg:text-6xl">o</a>
+          <a className="text-2xl  lg:text-5xl">t</a>
+          <a className="text-xl  lg:text-4xl"> </a>
+          <a className="text-xl  lg:text-3xl">c</a>
+          <a className="text-xl  lg:text-2xl">o</a>
+          <a className="text-xl lg:text-xl">m</a>
         </h1>
 
         <div className="flex flex-wrap items-center justify-around m-2">
 
           {data.map(({ date, courts}) => (
-            <div>
-              <p className="mt-3 text-2xl">
+            <div className="rounded-xl m-2 ring-black">
+              <p className="m-2 mt-4 text-2xl">
                 {''} 
-                <code className="p-3 font-mono text-lg bg-gray-100 rounded-md shadow-md m-2">
+                <code className="p-3 font-mono border text-lg bg-gray-100 rounded-md shadow m-2">
                   ⬇ Choose {date}'s Court ⬇
                 </code>
               </p>
@@ -48,7 +48,7 @@ export default function Home() {
                 {courts.map(({ name, url}) => (
                   <a
                   href={url}
-                  className="p-6 mt-6 m-2 text-left border rounded-xl shadow-md hover:shadow-2xl hover:text-blue-600 focus:text-blue-600"
+                  className="p-6 m-2 text-left rounded-xl shadow-md hover:shadow-2xl hover:ring-2 hover:ring-blue-600"
                   >
                     <h3 className="text-2xl font-bold">{name}</h3>
                   </a>
@@ -57,7 +57,6 @@ export default function Home() {
             </div>
           ))}
         </div>
-
       </main>
     </div>
   )
