@@ -7,7 +7,7 @@ export default function Home() {
 
 
   return (
-    <div className="dark:text-white dark:bg-gray-800 flex flex-col items-center justify-center min-h-screen">
+    <div className="dark:text-white dark:bg-gray-900 flex flex-col items-center justify-center min-h-screen">
       <Head>
         <title>🎾🎾🎾</title>
         <link rel="icon" href="/favicon.ico" />
@@ -38,7 +38,7 @@ export default function Home() {
             <div className="rounded-xl mt-4 ring-black">
               <p className="mb-2 text-2xl">
                 {''} 
-                <code className="p-3 font-mono text-lg bg-gray-100 dark:bg-gray-900">
+                <code className="p-3 font-mono text-lg bg-gray-100 dark:bg-gray-800">
                   ⬇ Choose {date}'s Court ⬇
                 </code>
               </p>
