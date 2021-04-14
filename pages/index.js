@@ -1,10 +1,9 @@
 import Head from 'next/head'
 
 export default function Home() {
-  const date = getDate();
-  const txtDate = getTxtDate();
-  var hp3 = "https://www.openplay.co.uk/booking/place/4038?date="+date+"&use_id=42"
-  var rp3 = "https://www.openplay.co.uk/booking/place/154?date="+date+"&use_id=42"
+
+  const t = [4, 5]
+  let data = [{date: getTxtDate(t[0]), courts: getCourts(t[0])}, {date: getTxtDate(t[1]), courts: getCourts(t[1])}]
 
 
   return (
@@ -16,7 +15,9 @@ export default function Home() {
 
       <main className="flex flex-col items-center justify-center flex-1 m-2 text-center">
         <h1 className="text-8xl font-bold">
-          <a className="text-3xl">welco</a>
+          <a className="text-xl">wel</a>
+          <a className="text-2xl">c</a>
+          <a className="text-3xl">o</a>
           <a className="text-4xl">m</a>
           <a className="text-5xl">e </a>
           <a className="text-6xl">t</a>
@@ -24,47 +25,51 @@ export default function Home() {
           <a className="text-blue-600">hAcK ThE TeNnIs bRo</a>
           <a className="text-7xl"> d</a>
           <a className="text-6xl">o</a>
-          <a className="text-5xl">t </a>
-          <a className="text-4xl">c</a>
-          <a className="text-3xl">om</a>
+          <a className="text-5xl">t</a>
+          <a className="text-4xl"> </a>
+          <a className="text-3xl">c</a>
+          <a className="text-2xl">o</a>
+          <a className="text-xl">m</a>
         </h1>
 
-        <p className="mt-3 text-2xl">
-          {''} 
-          <code className="p-3 font-mono text-lg bg-gray-100 rounded-md shadow-md m-2">
-            ⬇ Choose your Court for {txtDate} ⬇
-          </code>
-        </p>
-
         <div className="flex flex-wrap items-center justify-around m-2">
-          <a
-            href={hp3}
-            className="p-6 mt-6 m-2 text-left border w-96 rounded-xl shadow-md hover:shadow-2xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Hyde Park &rarr; 🚀</h3>
-          </a>
 
-          <a
-            href={rp3}
-            className="p-6 mt-6 m-2 text-left border w-96 rounded-xl shadow-md hover:shadow-2xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Regents Park &rarr; 🪐</h3>
-          </a>
+          {data.map(({ date, courts}) => (
+            <div>
+              <p className="mt-3 text-2xl">
+                {''} 
+                <code className="p-3 font-mono text-lg bg-gray-100 rounded-md shadow-md m-2">
+                  ⬇ Choose your Court for {date} ⬇
+                </code>
+              </p>
+
+              <div className="flex flex-wrap items-center justify-around m-2">
+
+                {courts.map(({ name, url}) => (
+                  <a
+                  href={url}
+                  className="p-6 mt-6 m-2 text-left border rounded-xl shadow-md hover:shadow-2xl hover:text-blue-600 focus:text-blue-600"
+                  >
+                    <h3 className="text-2xl font-bold">{name}</h3>
+                  </a>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
-      </main>
 
-      
+      </main>
     </div>
   )
 }
 
 
-function getDate() {
-  var t3 = new Date();
-  var dd = t3.getDate()+3;
+function getDate(i) {
+  var tx = new Date();
+  var dd = tx.getDate()+i;
 
-  var mm = t3.getMonth()+1; 
-  var yyyy = t3.getFullYear();
+  var mm = tx.getMonth()+1; 
+  var yyyy = tx.getFullYear();
 
   if(dd<10) {
       dd='0'+dd;
@@ -74,13 +79,11 @@ function getDate() {
       mm='0'+mm;
   } 
 
-  t3 = yyyy+'-'+mm+'-'+dd;
-  return t3
+  return yyyy+'-'+mm+'-'+dd
 }
 
-function getTxtDate() {
-  var t3 = new Date();
-  t3 = t3.addDays(3)
+function getTxtDate(i) {
+  var dt = new Date();
   var weekdays = new Array(7);
   weekdays[0] = "Sunday";
   weekdays[1] = "Monday";
@@ -89,8 +92,7 @@ function getTxtDate() {
   weekdays[4] = "Thursday";
   weekdays[5] = "Friday";
   weekdays[6] = "Saturday";
-  t3 = weekdays[t3.getDay()]
-  return t3
+  return weekdays[dt.addDays(i).getDay()]
 }
 
 Date.prototype.addDays = function(days) {
@@ -99,7 +101,17 @@ Date.prototype.addDays = function(days) {
     return date;
 }
 
+function getCourts(i) {
+  var date = getDate(i)
+  return [{name: "Hyde Park", url: "https://www.openplay.co.uk/booking/place/4038?date="+date+"&use_id=42"}, {name: "Regents Park", url: "https://www.openplay.co.uk/booking/place/154?date="+date+"&use_id=42"}]
+}
 
+function getWave(txt) {
+  
+  for (var i = 0; i < txt.length; i++) {
+    
+  }
+}
 
 /*
 
