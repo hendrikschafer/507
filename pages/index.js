@@ -35,10 +35,10 @@ export default function Home() {
         <div className="flex flex-wrap items-center justify-around m-2">
 
           {data.map(({ date, courts}) => (
-            <div className="rounded-xl m-2 ring-black">
+            <div className="rounded-xl m-2 mt-4 ring-black">
               <p className="m-2 text-2xl">
                 {''} 
-                <code className="p-3 font-mono border text-lg bg-gray-100 rounded-md shadow m-2">
+                <code className="p-3 font-mono text-lg bg-gray-100 rounded-md m-2">
                   ⬇ Choose {date}'s Court ⬇
                 </code>
               </p>
@@ -48,7 +48,7 @@ export default function Home() {
                 {courts.map(({ name, url}) => (
                   <a
                   href={url}
-                  className="p-6 m-2 text-left rounded-xl shadow-md hover:shadow-2xl hover:ring-2 hover:ring-blue-600"
+                  className="p-5 m-2 text-left rounded-xl shadow-md hover:shadow-2xl hover:ring-2 hover:ring-blue-600"
                   >
                     <h3 className="text-2xl font-bold">{name}</h3>
                   </a>
@@ -58,7 +58,7 @@ export default function Home() {
           ))}
         </div>
       </main>
-      <footer className="flex items-center justify-center w-full h-12 border">
+      <footer className="flex items-center justify-center w-full h-12 shadow-inner">
         <a
           className="flex items-center justify-center"
           href="https://www.narth.co.uk"
