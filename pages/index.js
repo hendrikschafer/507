@@ -14,7 +14,7 @@ export default function Home() {
       </Head>
 
       <main className="flex flex-col items-center justify-center flex-1 text-center">
-        <h1 className="text-5xl lg:text-8xl font-bold">
+        <h1 className="text-5xl lg:text-8xl font-bold mt-5">
           <a className="text-xl">wel</a>
           <a className="text-xl lg:text-2xl">c</a>
           <a className="text-xl lg:text-3xl">o</a>
@@ -48,7 +48,7 @@ export default function Home() {
                 {courts.map(({ name, url}) => (
                   <a
                   href={url}
-                  className="p-5 m-2 text-left rounded-xl shadow-md hover:shadow-2xl hover:ring-2 hover:ring-blue-600"
+                  className="p-5 m-2 text-left border rounded-xl shadow-md hover:shadow-2xl hover:ring-2 hover:ring-blue-600"
                   >
                     <h3 className="text-2xl font-bold">{name}</h3>
                   </a>
