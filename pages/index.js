@@ -13,7 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex flex-col items-center justify-center flex-1 m-2 text-center">
+      <main className="flex flex-col items-center justify-center flex-1 text-center">
         <h1 className="text-5xl lg:text-8xl font-bold">
           <a className="text-xl">wel</a>
           <a className="text-xl lg:text-2xl">c</a>
@@ -32,18 +32,18 @@ export default function Home() {
           <a className="text-xl lg:text-xl">m</a>
         </h1>
 
-        <div className="flex flex-wrap items-center justify-around m-2">
+        <div className="flex flex-wrap items-center justify-around">
 
           {data.map(({ date, courts}) => (
-            <div className="rounded-xl m-2 mt-4 ring-black">
-              <p className="m-2 text-2xl">
+            <div className="rounded-xl mt-4 ring-black">
+              <p className="mb-2 text-2xl">
                 {''} 
-                <code className="p-3 font-mono text-lg bg-gray-100 rounded-md m-2">
+                <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
                   ⬇ Choose {date}'s Court ⬇
                 </code>
               </p>
 
-              <div className="flex flex-wrap items-center justify-around m-2">
+              <div className="flex flex-wrap items-center justify-around">
 
                 {courts.map(({ name, url}) => (
                   <a
