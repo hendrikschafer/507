@@ -36,7 +36,7 @@ export default function Home() {
 
           {data.map(({ date, courts}) => (
             <div className="rounded-xl mt-4 ring-black">
-              <p className="mb-2 text-2xl">
+              <p className="mb-2 text-2xl animate-pulse">
                 {''} 
                 <code className="p-3 font-mono text-lg bg-gray-100 dark:bg-gray-800">
                   ⬇ Choose {date}'s Court ⬇
@@ -48,7 +48,7 @@ export default function Home() {
                 {courts.map(({ name, url}) => (
                   <a
                   href={url}
-                  className="bg-gray-300 dark:bg-gray-600 p-5 m-2 text-left ring-black dark:ring-white hover:ring-blue-600 rounded-xl shadow-md hover:shadow-2xl ring-1 hover:ring-2"
+                  className="dark:bg-gray-600 p-5 m-2 text-left ring-black dark:ring-white hover:ring-blue-600 rounded-xl shadow-md hover:shadow-2xl ring-1 hover:ring-2"
                   >
                     <h3 className="text-2xl font-bold">{name}</h3>
                   </a>
@@ -74,11 +74,12 @@ export default function Home() {
 
 
 function getDate(i) {
-  var tx = new Date();
-  var dd = tx.getDate()+i;
+  var dt = new Date();
+  dt = dt.addDays(i)
 
-  var mm = tx.getMonth()+1; 
-  var yyyy = tx.getFullYear();
+  var dd = dt.getDate();
+  var mm = dt.getMonth()+1; 
+  var yyyy = dt.getFullYear();
 
   if(dd<10) {
       dd='0'+dd;
@@ -121,6 +122,7 @@ function getWave(txt) {
     
   }
 }
+
 
 /*
 
