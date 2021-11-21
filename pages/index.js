@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Image from 'next/image'
 import React, { useEffect, useState } from "react";
 
 export default function Home() {
@@ -50,7 +51,7 @@ export default function Home() {
       </Head>
       <main className="flex flex-col justify-center w-full flex-1 p-4 text-center max-w-4xl">
         <div className="flex items-center flex-wrap justify-around max-w-3xl w-full mx-auto shadow-inner">
-          <img className="" src={"/507Logo.svg"} alt="Picture of Food Maniac 3000 Logo"/>
+          <img src="/507Logo.svg" alt="Picture of Food Maniac 3000 Logo"/>
         </div>
 
         <div className="m-16 items-center grid-flow-col">
@@ -73,46 +74,4 @@ export default function Home() {
       </footer>
     </div>
   )
-}
-
-
-function getDate(i) {
-  var dt = new Date();
-  dt = dt.addDays(i)
-
-  var dd = dt.getDate();
-  var mm = dt.getMonth()+1; 
-  var yyyy = dt.getFullYear();
-
-  if(dd<10) {
-      dd='0'+dd;
-  }
-  if(mm<10) {
-      mm='0'+mm;
-  } 
-  return yyyy+'-'+mm+'-'+dd
-}
-
-function getTxtDate(i) {
-  var dt = new Date();
-  var weekdays = new Array(7);
-  weekdays[0] = "Sunday";
-  weekdays[1] = "Monday";
-  weekdays[2] = "Tuesday";
-  weekdays[3] = "Wednesday";
-  weekdays[4] = "Thursday";
-  weekdays[5] = "Friday";
-  weekdays[6] = "Saturday";
-  return weekdays[dt.addDays(i).getDay()]
-}
-
-Date.prototype.addDays = function(days) {
-    var date = new Date(this.valueOf());
-    date.setDate(date.getDate() + days);
-    return date;
-}
-
-function getCourts(i) {
-  var date = getDate(i)
-  return [{name: "🔥Hyde Park🔥", url: "https://www.openplay.co.uk/booking/place/4038?date="+date+"&use_id=42"}, {name: "🚀Regents Park🚀", url: "https://www.openplay.co.uk/booking/place/154?date="+date+"&use_id=42"}]
 }
