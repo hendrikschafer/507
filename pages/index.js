@@ -51,7 +51,7 @@ export default function Home() {
       </Head>
       <main className="flex flex-col justify-center w-full flex-1 p-4 text-center max-w-4xl">
         <div className="flex items-center flex-wrap justify-around max-w-3xl w-full mx-auto shadow-inner">
-          <img src="/507Logo2.svg" alt="Picture of Food Maniac 3000 Logo"/>
+          <img src="/507Logo2.png" alt="Picture of Food Maniac 3000 Logo"/>
         </div>
 
         <div className="m-16 items-center grid-flow-col">
