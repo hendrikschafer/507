@@ -17,19 +17,19 @@ export default function Home() {
       const difference = target.getTime() - now.getTime();
 
       var d = Math.floor(difference / (1000 * 60 * 60 * 24));
-      if (d < 10){d = "0" + d.toString()}
+      //if (d < 10){d = "0" + d.toString()}
       setDays(d);
 
       var h = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      if (h < 10){h = "0" + h.toString()}
+      //if (h < 10){h = "0" + h.toString()}
       setHours(h);
 
       var m = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-      if (m < 10){m = "0" + m.toString()}
+      //if (m < 10){m = "0" + m.toString()}
       setMinutes(m);
 
       var s = Math.floor((difference % (1000 * 60)) / 1000);
-      if (s < 10){s = "0" + s.toString()}
+      //if (s < 10){s = "0" + s.toString()}
 
       setSeconds(s);
 
@@ -45,7 +45,7 @@ export default function Home() {
   return (
     <div className="dark:text-white dark:bg-gray-900 flex flex-col items-center justify-center min-h-screen">
       <Head>
-        <title>🔥</title>
+        <title>507</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="flex flex-col justify-center w-full flex-1 p-4 text-center max-w-4xl">
@@ -54,11 +54,11 @@ export default function Home() {
         </div>
 
         <div className="m-16 items-center grid-flow-col">
-          <h3 className="text-2xl text-left">Next Party Starts In:</h3>
-          <p className="text-6xl font-bold text-left">Days: {days}</p>
-          <p className="text-6xl font-bold text-left">Hours: {hours}</p>
-          <p className="text-6xl font-bold text-left">Minutes: {minutes}</p>
-          <p className="text-6xl font-bold text-left">Seconds: {seconds}</p>
+          <h3 className="md:text-2xl text-xl text-left">Next Party Starts In:</h3>
+          <p className="md:text-6xl text-4xl font-bold text-left">Days: {days}</p>
+          <p className="md:text-6xl text-4xl font-bold text-left">Hours: {hours}</p>
+          <p className="md:text-6xl text-4xl font-bold text-left">Minutes: {minutes}</p>
+          <p className="md:text-6xl text-4xl font-bold text-left">Seconds: {seconds}</p>
         </div>
       </main>
       <footer className="flex items-center justify-center w-full h-12 shadow-inner">
