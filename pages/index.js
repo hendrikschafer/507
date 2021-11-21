@@ -54,7 +54,7 @@ export default function Home() {
         </div>
 
         <div className="m-16 items-center grid-flow-col">
-          <h3 className="md:text-2xl text-xl text-left">Next Party Starts In:</h3>
+          <h3 className="md:text-2xl text-xl text-left">Next event starts in:</h3>
           <p className="md:text-6xl text-4xl font-bold text-left">Days: {days}</p>
           <p className="md:text-6xl text-4xl font-bold text-left">Hours: {hours}</p>
           <p className="md:text-6xl text-4xl font-bold text-left">Minutes: {minutes}</p>
