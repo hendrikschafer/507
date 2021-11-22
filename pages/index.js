@@ -62,12 +62,6 @@ export default function Home() {
             <p className="md:text-6xl text-4xl font-bold text-left">Seconds: {seconds}</p>
           </div>
         </div>
-
-        <div className="grid-flow-col inset-x-0 bottom-0 z-40">
-          <a className="z-40" href="https://www.narth.co.uk" target="_blank" rel="noopener noreferrer">
-            Powered by 🪐
-          </a>
-        </div>
       </main>
     </div>
   )
