@@ -52,7 +52,7 @@ export default function Home() {
         </video>
 
         <div className="grid grid-cols-1 justify-center object-center m-16 lg:mx-96 inset-0">
-          <img className="z-40 w-auto inset-0" src="/507Logo3.png" alt="Picture of Nirvana" />
+          <img className="z-40 w-auto inset-0" src="/507Logo4.png" alt="Picture of Nirvana" />
           
           <div className="grid grid-cols-1 z-40 inset-0">
             <h3 className="md:text-2xl text-xl text-left">Next event starts in:</h3>
