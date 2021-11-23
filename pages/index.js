@@ -51,7 +51,7 @@ export default function Home() {
           Your browser does not support the video tag.
         </video>
 
-        <div className="grid grid-cols-1 justify-center object-center sm:m-4 sm:mt-16 md:m-8 lg:mx-96 inset-0">
+        <div className="grid grid-cols-1 justify-center object-center sm:m-8 sm:mt-16 md:m-8 lg:mx-96 inset-0">
           <img className="z-40 w-auto inset-0" src="/507Logo7.png" alt="Picture of Nirvana" />
           
           <div className="grid grid-cols-1 z-40 inset-0 mt-4">
