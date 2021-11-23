@@ -51,10 +51,10 @@ export default function Home() {
           Your browser does not support the video tag.
         </video>
 
-        <div className="grid grid-cols-1 justify-center object-center md:m-8 m-32 lg:mx-96 inset-0">
+        <div className="grid grid-cols-1 justify-center object-center m-8 lg:mx-96 inset-0">
           <img className="z-40 w-auto inset-0" src="/507Logo7.png" alt="Picture of Nirvana" />
           
-          <div className="grid grid-cols-1 z-40 inset-0 text-shadow-xl m-4">
+          <div className="grid grid-cols-1 z-40 inset-0 text-shadow-xl">
             <h3 className="md:text-2xl text-xl text-left">Next event starts in:</h3>
             <p className="md:text-6xl text-4xl font-bold text-left">Days: {days}</p>
             <p className="md:text-6xl text-4xl font-bold text-left">Hours: {hours}</p>
