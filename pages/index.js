@@ -39,6 +39,32 @@ export default function Home() {
   }, []);
 
 
+  const [input, setInput] = useState('')
+
+  const subscribe = async (e) => {
+    e.preventDefault()
+    try {
+      const res = await fetch('./api/subscribe', {
+        method: 'post',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          emailAddress: input,
+          status: "subscribed"
+        })
+      })
+
+      if (res.status === 200) {
+        alert('You are subscribed!')
+      } else {
+        alert('Sorry, something went wrong.')
+      }
+    } catch (err) {
+      alert(err)
+    }
+  }
+
   return (
     <div className="text-white dark:bg-gray-900 flex flex-col items-center justify-center min-h-full min-w-full max-w-full">
       <Head>
@@ -48,13 +74,13 @@ export default function Home() {
 
       <main className="min-w-full max-w-full min-h-full text-center">
         <video autoPlay loop muted playsInline className="absolute z-0 w-auto min-w-full min-h-full max-w-none">
-          <source src="/juicy80s.mp4" type="video/mp4"/>
+          <source src="/juicy80s.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
         <div className="grid grid-cols-1 justify-center object-center m-8 mt-16 md:mt-8 lg:mx-96 inset-0">
           <img className="z-40 w-auto inset-0" src="/507LogoWhite.png" alt="Picture of Nirvana" />
-          
+
           <div className="grid grid-cols-1 z-40 inset-0 mt-4">
             <h3 className="md:text-2xl text-xl text-left">Next event starts in:</h3>
             <p className="md:text-6xl text-4xl font-bold text-left">Days: {days}</p>
@@ -62,7 +88,16 @@ export default function Home() {
             <p className="md:text-6xl text-4xl font-bold text-left">Minutes: {minutes}</p>
             <p className="md:text-6xl text-4xl font-bold text-left">Seconds: {seconds}</p>
           </div>
-          
+
+          <div className="z-40 mt-8 text-2xl container mx-0">
+            <form className="flex-1">
+              <input className="p-2 pl-4 text-black rounded-l-2xl" id="email" type="email" aria-label="email address" placeholder="Enter your email address" value={input} onChange={e => setInput(e.target.value)} />
+              <button className="bg-black hover:bg-blue-700 duration-100 text-white p-2 pr-4 pl-4 rounded-r-2xl" type='submit' onClick={subscribe}>
+                Sign Up
+              </button>
+            </form>
+          </div>
+
         </div>
       </main>
     </div>
