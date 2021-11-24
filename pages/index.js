@@ -72,7 +72,7 @@ export default function Home() {
   }
 
   return (
-    <div className="text-white dark:bg-gray-900 flex flex-col items-center justify-center min-h-full min-w-full max-w-full">
+    <div className="text-white flex flex-col items-center justify-center min-h-full min-w-full max-w-full">
       <Head>
         <title>507</title>
         <link rel="icon" href="/507.ico" />
@@ -97,8 +97,8 @@ export default function Home() {
 
           <div className="z-40 m-4 md:text-2xl">
             <form className="">
-              <input className="p-2 rounded-2xl text-black text-center" id="email" type="email" aria-label="email address" placeholder="enter your email" value={input} onChange={e => setInput(e.target.value)} />
-              <button className="p-1 m-2 border-white text-white border-solid border-4 rounded-2xl hover:bg-black transition duration-200" type='submit' onClick={subscribe}>
+              <input className="p-2 rounded-2xl text-black text-center" id="email" name="email" type="email" autocomplete="email" placeholder="enter your email" value={input} onChange={e => setInput(e.target.value)} />
+              <button className="p-1 m-2 border-white text-white border-solid border-4 rounded-2xl hover:bg-gray-700 hover:shadow-inner transition duration-200" type='submit' onClick={subscribe}>
                 Subscribe
               </button>
             </form>
