@@ -69,7 +69,7 @@ export default function Home() {
     <div className="text-white dark:bg-gray-900 flex flex-col items-center justify-center min-h-full min-w-full max-w-full">
       <Head>
         <title>507</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/507.ico" />
       </Head>
 
       <main className="min-w-full max-w-full min-h-full text-center">
