@@ -6,7 +6,6 @@ const mySecret = process.env['MAILCHIMP_API_KEY']
 
 export default async (req, res) => {
   const email = req.body.emailAddress
-  console.log(`${mySecret}`)
 
   try {
     const response = await fetch(`https://${dc}.api.mailchimp.com/3.0/lists/${listId}/members`, {
@@ -20,12 +19,15 @@ export default async (req, res) => {
         status: "subscribed"
       })
     })
-    
+    console.log(response.status)
     if (response.status === 200) {
       res.statusCode = 200
       res.end()
-    } else {
+    } else if (response.status === 400) {
       res.statusCode = 400
+      res.end()
+    } else {
+      res.statusCode = 404
       res.end()
     }
   } catch { }

@@ -56,9 +56,11 @@ export default function Home() {
       })
 
       if (res.status === 200) {
-        alert('You are subscribed!')
+        alert("You are subscribed!")
+      } else if (res.status === 400) {
+        alert("You are already subscribed!")
       } else {
-        alert('Sorry, something went wrong.')
+        alert("Sorry, something went wrong.")
       }
     } catch (err) {
       alert(err)
