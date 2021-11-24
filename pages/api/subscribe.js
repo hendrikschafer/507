@@ -2,16 +2,18 @@
 
 const dc = "us20"
 const listId = "1024489d4d"
-const jaja = process.env.MAILCHIMP_API_KEY;
+const mySecret = process.env['MAILCHIMP_API_KEY']
 
 export default async (req, res) => {
   const email = req.body.emailAddress
+  console.log(`${mySecret}`)
+
   try {
     const response = await fetch(`https://${dc}.api.mailchimp.com/3.0/lists/${listId}/members`, {
       method: "post",
       headers: {
         "Content-Type": "application/json",
-        "Authorization": `Bearer ${jaja}`,
+        "Authorization": `Bearer ${mySecret}`,
       },
       body: JSON.stringify({
         email_address: email,
