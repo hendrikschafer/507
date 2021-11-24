@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+
 import React, { useEffect, useState } from "react";
 
 export default function Home() {
@@ -47,12 +48,12 @@ export default function Home() {
 
       <main className="min-w-full max-w-full min-h-full text-center">
         <video autoPlay loop muted playsInline className="absolute z-0 w-auto min-w-full min-h-full max-w-none">
-          <source src="/giphy.mp4" type="video/mp4"/>
+          <source src="/juicy80s.mp4" type="video/mp4"/>
           Your browser does not support the video tag.
         </video>
 
         <div className="grid grid-cols-1 justify-center object-center m-8 mt-16 md:mt-8 lg:mx-96 inset-0">
-          <img className="z-40 w-auto inset-0" src="/507Logo7.png" alt="Picture of Nirvana" />
+          <img className="z-40 w-auto inset-0" src="/507LogoWhite.png" alt="Picture of Nirvana" />
           
           <div className="grid grid-cols-1 z-40 inset-0 mt-4">
             <h3 className="md:text-2xl text-xl text-left">Next event starts in:</h3>
@@ -61,6 +62,7 @@ export default function Home() {
             <p className="md:text-6xl text-4xl font-bold text-left">Minutes: {minutes}</p>
             <p className="md:text-6xl text-4xl font-bold text-left">Seconds: {seconds}</p>
           </div>
+          
         </div>
       </main>
     </div>
