@@ -19,7 +19,7 @@ export default async (req, res) => {
         status: "subscribed"
       })
     })
-    console.log(response.status)
+    //console.log(response)
     if (response.status === 200) {
       res.statusCode = 200
       res.end()

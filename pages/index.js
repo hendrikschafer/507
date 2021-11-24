@@ -58,7 +58,11 @@ export default function Home() {
       if (res.status === 200) {
         alert("You are subscribed!")
       } else if (res.status === 400) {
-        alert("You are already subscribed!")
+        if (input == "") {
+          alert("Please enter a valid email address")
+        } else {
+          alert("You are either already subscribed or have not entered a correct email address!")
+        }
       } else {
         alert("Sorry, something went wrong.")
       }
