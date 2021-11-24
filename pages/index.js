@@ -91,9 +91,9 @@ export default function Home() {
 
           <div className="z-40 mt-8 text-2xl container mx-0">
             <form className="flex-1">
-              <input className="p-2 pl-4 text-black rounded-l-2xl" id="email" type="email" aria-label="email address" placeholder="Enter your email address" value={input} onChange={e => setInput(e.target.value)} />
+              <input className="p-2 pl-4 text-black rounded-l-2xl" id="email" type="email" aria-label="email address" placeholder="add email" value={input} onChange={e => setInput(e.target.value)} />
               <button className="bg-black hover:bg-blue-700 duration-100 text-white p-2 pr-4 pl-4 rounded-r-2xl" type='submit' onClick={subscribe}>
-                Sign Up
+                Subscribe
               </button>
             </form>
           </div>
