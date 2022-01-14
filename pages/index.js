@@ -12,7 +12,7 @@ export default function Home() {
   const [seconds, setSeconds] = useState(0);
 
   useEffect(() => {
-    const target = new Date("1/23/2022 23:59:59");
+    const target = new Date("1/29/2022 20:00:00");
 
     const interval = setInterval(() => {
       const now = new Date();
@@ -97,7 +97,7 @@ export default function Home() {
 
           <div className="z-40 m-4 md:text-2xl">
             <form className="">
-              <input className="p-2 rounded-2xl text-black text-center" id="email" name="email" type="email" autocomplete="email" placeholder="enter your email" value={input} onChange={e => setInput(e.target.value)} />
+              <input className="p-2 rounded-2xl text-black text-center" id="email" name="email" type="email" autoComplete="email" placeholder="enter your email" value={input} onChange={e => setInput(e.target.value)} />
               <button className="p-1 m-2 border-white text-white border-solid border-4 rounded-2xl hover:bg-gray-700 hover:shadow-inner transition duration-200" type='submit' onClick={subscribe}>
                 Subscribe
               </button>
