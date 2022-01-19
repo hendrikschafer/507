@@ -89,7 +89,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 z-40 inset-0 mt-4">
             <h3 className="md:text-2xl text-xl text-left">Next event starts in:</h3>
-            <p className="md:text-6xl text-4xl font-bold text-left shadow-2xl">Days: {days}</p>
+            <p className="md:text-6xl text-4xl font-bold text-left">Days: {days}</p>
             <p className="md:text-6xl text-4xl font-bold text-left">Hours: {hours}</p>
             <p className="md:text-6xl text-4xl font-bold text-left">Minutes: {minutes}</p>
             <p className="md:text-6xl text-4xl font-bold text-left">Seconds: {seconds}</p>
