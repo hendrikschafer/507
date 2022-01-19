@@ -88,8 +88,8 @@ export default function Home() {
           <img className="z-40 w-auto inset-0" src="/507LogoWhite.png" alt="Picture of Nirvana" />
 
           <div className="grid grid-cols-1 z-40 inset-0 mt-4">
-            <h3 className="md:text-2xl text-xl text-left">Next event starts in:</h3>
-            <p className="md:text-6xl text-4xl font-bold text-left">Days: {days}</p>
+            <h3 className="md:text-2xl text-xl text-left drop-shadow-2xl">Next event starts in:</h3>
+            <p className="md:text-6xl text-4xl font-bold text-left shadow-2xl">Days: {days}</p>
             <p className="md:text-6xl text-4xl font-bold text-left">Hours: {hours}</p>
             <p className="md:text-6xl text-4xl font-bold text-left">Minutes: {minutes}</p>
             <p className="md:text-6xl text-4xl font-bold text-left">Seconds: {seconds}</p>
