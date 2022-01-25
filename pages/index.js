@@ -72,14 +72,14 @@ export default function Home() {
   }
 
   return (
-    <div className="text-white flex flex-col items-center justify-center min-h-full min-w-full max-w-full">
+    <div className="text-white flex flex-col items-center justify-center min-h-full min-w-full max-w-full z-0">
       <Head>
         <title>507</title>
         <link rel="icon" href="/507.ico" />
       </Head>
 
-      <main className="min-w-full max-w-full min-h-full text-center">
-        <video autoPlay loop muted playsInline className="absolute z-0 w-full h-full max-w-none object-cover">
+      <main className="min-w-full max-w-full min-h-full text-center bg-black">
+        <video autoPlay loop muted playsInline className="absolute z-1 w-full h-full object-cover">
           <source src="/BW507.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
