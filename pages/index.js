@@ -78,7 +78,7 @@ export default function Home() {
         <link rel="icon" href="/507.ico" />
       </Head>
 
-      <main className="min-w-full max-w-full min-h-full text-center bg-black">
+      <main className="min-w-full max-w-full min-h-full text-center bg-black object-cover z-0">
         <video autoPlay loop muted playsInline className="absolute z-1 w-full h-full object-cover">
           <source src="/BW507.mp4" type="video/mp4" />
           Your browser does not support the video tag.
