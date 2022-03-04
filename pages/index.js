@@ -12,7 +12,7 @@ export default function Home() {
   const [seconds, setSeconds] = useState(0);
 
   useEffect(() => {
-    const target = new Date("1/29/2022 20:00:00");
+    const target = new Date("5/20/2022 21:00:00");
 
     const interval = setInterval(() => {
       const now = new Date();
