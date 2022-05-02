@@ -75,30 +75,20 @@ export default function Home() {
     <div className="text-white flex flex-col items-center justify-center min-h-full min-w-full max-w-full">
       <Head>
         <title>507</title>
-        <link rel="icon" href="/507.ico" />
       </Head>
 
       <main className="min-w-full max-w-full min-h-full text-center">
-        <video autoPlay loop muted playsInline className="absolute z-0 w-full h-full max-w-none object-cover">
-          <source src="/BW507.mp4" type="video/mp4" />
+        <video autoPlay muted playsInline className="absolute object-center z-0 w-full h-full max-w-none object-cover">
+          <source src="/507Jungle4K.mov" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
-        <div className="grid grid-cols-1 justify-center object-center m-8 mt-16 md:mt-8 lg:mx-96 inset-0">
-          <img className="z-40 w-auto inset-0" src="/507LogoWhite.png" alt="Picture of Nirvana" />
+        <div className="grid grid-cols-1">
 
-          <div className="grid grid-cols-1 z-40 inset-0 mt-4">
-            <h3 className="md:text-2xl text-xl text-left">Next event starts in:</h3>
-            <p className="md:text-6xl text-4xl font-bold text-left">Days: {days}</p>
-            <p className="md:text-6xl text-4xl font-bold text-left">Hours: {hours}</p>
-            <p className="md:text-6xl text-4xl font-bold text-left">Minutes: {minutes}</p>
-            <p className="md:text-6xl text-4xl font-bold text-left">Seconds: {seconds}</p>
-          </div>
-
-          <div className="z-40 m-4 md:text-2xl">
+          <div className="z-40 md:text-2xl">
             <form className="">
-              <input className="p-2 rounded-2xl text-black text-center" id="email" name="email" type="email" autoComplete="email" placeholder="enter your email" value={input} onChange={e => setInput(e.target.value)} />
-              <button className="p-1 m-2 border-white text-white border-solid border-4 rounded-2xl hover:bg-gray-700 hover:shadow-inner transition duration-200" type='submit' onClick={subscribe}>
+              <input className="p-2 text-black text-center bottom-0" id="email" name="email" type="email" autoComplete="email" placeholder="enter your email" value={input} onChange={e => setInput(e.target.value)} />
+              <button className="p-1 border-white text-white border-solid border-4 hover:bg-lime-600 hover:shadow-outer transition duration-200" type='submit' onClick={subscribe}>
                 Subscribe
               </button>
             </form>
